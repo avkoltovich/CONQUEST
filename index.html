@@ -14,11 +14,11 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <img class="main-header__logo" src="img/logo.png" alt="CONQUEST" width="104" height="26">
-      <nav class="main-nav">
-        <button class="main-header__btn" type="button">
+      <nav class="main__nav">
+        <button class="main-header__btn main-header__btn--menu" type="button">
           <img class="main-header__img" src="img/menu.svg" width="20" height="18" alt="Меню">
         </button>
+        <img class="main-header__logo" src="img/logo.png" alt="CONQUEST" width="104" height="26">
         <ul class="visually-hidden">
           <li class="main-header__item">
             <a class="main-header__link" href="">Каталог</a>
@@ -36,19 +36,19 @@
       </nav>
       <ul class="main-header__list--user">
         <li class="main-header__ltem--user">
-          <a href="" class="main-header__link--user">
+          <button class="main-header__btn" type="button">
             <img class="main-header__img" src="img/search.svg" width="16" height="16" alt="Поиск">
-          </a>
+          </button>
         </li>
         <li class="main-header__ltem--user">
-          <a href="" class="main-header__link--user">
+          <button class="main-header__btn main-header__btn--fav" type="button">
             <img class="main-header__img" src="img/heart.svg" width="21" height="18" alt="Избранное">
-          </a>
+          </button>
         </li>
         <li class="main-header__ltem--user">
-          <a href="" class="main-header__link--user">
+          <button class="main-header__btn" type="button">
             <img class="main-header__img" src="img/cart.svg" width="18" height="16" alt="Корзина">
-          </a>
+          </button>
         </li>
       </ul>
     </header>
@@ -56,7 +56,7 @@
   <main>
     <h1 class="visually-hidden">Швейцарские часы в наличии в Москве
       и с доставкой по всему миру</h1>
-    <section class="promo">
+    <section class="promo container">
       <h2 class="promo__heading">Весна/Лето 2019<br>
         <span class="promo__heading--span">Коллекция</span>
       </h2>
@@ -64,23 +64,16 @@
         Швейцарские часы в наличии в Москве
         и с доставкой по всему миру
       </p>
-      <a class="promo__link" href="">Смотреть каталог</a>
-      <figure class="promo__figure">
-        <img class="promo__img" src="img/watch-promo.png" width="506" height="806" alt="Часы RADO">
-        <figcaption class="promo__figcaption">
-          <span class="promo__price">22 000 ₽</span>
-          <span class="promo__diameter">28 мм диаметр</span>
-        </figcaption>
-      </figure>
+      <a class="promo__button" href="">Смотреть каталог</a>
       <ul class="promo__list">
         <li class="promo__item">
-          <a href="" class="promo__link--inst"><span class="visually-hidden">Instagram</span></a>
+          <a href="" class="promo__link promo__link--inst"><span class="visually-hidden">Instagram</span></a>
         </li>
         <li class="promo__item">
-          <a href="" class="promo__link--fb"><span class="visually-hidden">Facebook</span></a>
+          <a href="" class="promo__link promo__link--fb"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="promo__item">
-          <a href="" class="promo__link--tw"><span class="visually-hidden">Twitter</span></a>
+          <a href="" class="promo__link promo__link--tw"><span class="visually-hidden">Twitter</span></a>
         </li>
       </ul>
     </section>
