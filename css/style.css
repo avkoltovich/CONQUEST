@@ -200,7 +200,10 @@
 }
 
 .pop-models {
-  padding: 80px 98px;
+  padding-top: 80px;
+  padding-right: 98px;
+  padding-bottom: 25px;
+  padding-left: 98px;
 }
 
 .pop-models__heading {
@@ -354,4 +357,242 @@
   content: "";
 
   background-color: #8b8371;
+}
+
+.slider {
+  width: 100%;
+  height: 519px;
+  margin-bottom: 80px;
+
+  background-color: #fdfdfb;
+}
+
+.slider__wrapper {
+  height: 100%;
+  padding-top: 52px;
+  padding-left: 177px;
+
+  background-image: url('../img/slider-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider__figure {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.slider__img {
+  margin-right: 69px;
+}
+
+.slider__figcaption {
+  padding-top: 60px;
+}
+
+.slider__heading {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1b1a17;
+}
+
+.slider__text {
+  max-width: 376px;
+  margin-bottom: 39px;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444240;
+}
+
+.slider__link {
+  display: block;
+  width: 205px;
+  height: 64px;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  background-color: #d4b098;
+}
+
+.slider__pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 363px;
+
+  list-style: none;
+}
+
+.slider__pag-item {
+  margin-right: 19px;
+
+  font-family: 'Prata', 'Times New Roman', serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.slider__pag-btn {
+  padding: 0;
+  margin: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__pag-img--right {
+  transform: rotate(180deg);
+}
+
+.follow-us {
+  display: flex;
+  padding-left: 97px;
+}
+
+.follow-us__wrapper {
+  padding-top: 128px;
+  margin-right: 65px;
+}
+
+.follow-us__heading {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1b1a17;
+}
+
+.follow-us__text {
+  max-width: 376px;
+  margin-bottom: 40px;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.19px;
+  color: #444240;
+}
+
+.follow-us__text b {
+  color: #262421;
+}
+
+.follow-us__list {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+}
+
+.follow-us__item {
+  margin-right: 14px;
+  margin-left: 0;
+}
+
+.follow-us__link {
+  display: block;
+  width: 23px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.follow-us__link--inst {
+  background-image: url('../img/instagram-icon.svg');
+}
+
+.follow-us__link--fb {
+  background-image: url('../img/facebook-icon.svg');
+}
+
+.follow-us__link--tw {
+  background-image: url('../img/twitter-icon.svg');
+}
+
+.follow-us__pictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+.follow-us__img {
+  margin: 5px;
+}
+
+.footer {
+  min-height: 275px;
+  background-color: #444240;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 69px;
+  padding-right: 180px;
+  padding-left: 180px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+}
+
+.footer__contacts a {
+  margin-bottom: 11px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__nav-title {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.98px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__nav-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer__nav-item {
+  margin-bottom: 6px;
+}
+
+.footer__nav-link {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
 }
