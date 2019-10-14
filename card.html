@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CONQUEST - Georg Jensen</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7cPrata%7cRoboto:300,400,500,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="catalog-header">
+    <a class="catalog-header__link--logo" href="index.html"><img class="catalog-header__logo" src="img/logo.png"
+        alt="CONQUEST" width="104" height="26"></a>
+    <nav class="catalog-header__nav">
+      <ul class="catalog-header__list">
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Каталог</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Акции</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Доставка</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="catalog-header__list--user">
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/search.svg" width="16" height="16" alt="Поиск">
+          </a>
+        </li>
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/heart.svg" width="21" height="18" alt="Избранное">
+          </a>
+        </li>
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/cart.svg" width="18" height="16" alt="Корзина">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Georg Jensen</h1>
+    <ul class="catalog__pagination">
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" href="">Главная</a>
+      </li>
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" href="">Каталог</a>
+      </li>
+      <li class="catalog__pag-item">
+        <a href="" class="catalog__pag-link">Мужские часы</a>
+      </li>
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" aria-current="page">Georg Jensen</a>
+      </li>
+    </ul>
+    <div class="card-wrapper">
+      <section class="card-photo">
+        <h2 class="visually-hidden">Фотографии товара</h2>
+        <p class="card-photo__full-img">
+          <img class="card__img" src="img/card/watch-card-1.png" alt="KULTE, 26 ММ">
+          <button class="card-photo__btn" type="button">
+            <img class="card-photo__arrow" src="img/card/arrow.svg" alt="Предыдущая">
+          </button>
+          <button class="card-photo__btn" type="button">
+            <img class="card-photo__arrow card-photo__arrow--right" src="img/card/arrow.svg" alt="Следующая">
+          </button>
+        </p>
+        <ul class="card-photo__list">
+          <li class="card-photo__item">
+            <img class="card__img" src="img/card/watch-card-2.png" alt="KULTE, 26 ММ">
+          </li>
+          <li class="card-photo__item">
+            <img class="card__img" src="img/card/watch-card-3.png" alt="KULTE, 26 ММ">
+          </li>
+          <li class="card-photo__item">
+            <img class="card__img" src="img/card/watch-card-4.png" alt="KULTE, 26 ММ">
+          </li>
+          <li class="card-photo__item">
+            <img class="card__img" src="img/card/watch-card-5.png" alt="KULTE, 26 ММ">
+          </li>
+        </ul>
+      </section>
+      <section class="card-description">
+        <h2 class="card-description__heading">KULTE, 26 ММ</h2>
+        <b class="card-description__price">12 700 ₽</b>
+        <button class="card-description__btn--desc" type="button">Описание</button>
+        <button class="card-description__btn--spec" type="button">Технические характеристики</button>
+        <p class="card-description__text">
+          Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были
+          встречены аплодисментами, а дизайн считался революционным.
+          Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made
+          обеспечивает высокий уровень технических характеристик.
+          Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так
+          и
+          снаружи.
+        </p>
+        <button class="card-description__btn--cart">В КОРЗИНУ</button>
+        <button class="card-description__btn--fav">
+          <img class="card-description__icon" src="img/heart.svg" alt="В избранное">
+        </button>
+      </section>
+    </div>
+    <section class="viewed">
+      <h2 class="viewed__heading">Вы смотрели</h2>
+      <ul class="watch__list">
+        <li class="watch__item">
+          <h3 class="watch__title">TECHNE</h3>
+          <span class="watch__price">15 700 ₽</span>
+          <button class="watch__btn--cart" type="button">
+            <img class="watch__icon" src="img/cart.svg" width="18" height="16" alt="В корзину">
+          </button>
+          <button class="watch__btn--fav" type="button">
+            <img class="watch__icon" src="img/heart.svg" width="20" height="18" alt="В избранное">
+          </button>
+          <img class="watch__img" src="img/card/viewed1.png" alt="TECHNE">
+        </li>
+        <li class="watch__item">
+          <h3 class="watch__title">TECHNE</h3>
+          <span class="watch__price">15 700 ₽</span>
+          <button class="watch__btn--cart" type="button">
+            <img class="watch__icon" src="img/cart.svg" width="18" height="16" alt="В корзину">
+          </button>
+          <button class="watch__btn--fav" type="button">
+            <img class="watch__icon" src="img/heart.svg" width="20" height="18" alt="В избранное">
+          </button>
+          <img class="watch__img" src="img/card/viewed2.png" alt="TECHNE">
+        </li>
+        <li class="watch__item">
+          <h3 class="watch__title">TECHNE</h3>
+          <span class="watch__price">22 700 ₽</span>
+          <button class="watch__btn--cart" type="button">
+            <img class="watch__icon" src="img/cart.svg" width="18" height="16" alt="В корзину">
+          </button>
+          <button class="watch__btn--fav" type="button">
+            <img class="watch__icon" src="img/heart.svg" width="20" height="18" alt="В избранное">
+          </button>
+          <img class="watch__img" src="img/card/viewed3.png" alt="TECHNE">
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__contacts">
+      <img class="footer__logo" src="img/logo-white.png" alt="CONQUEST" width="130" height="34">
+      <a class="footer__tel" href="tel:+74994504797">8 (499) 450-47-97</a>
+      <a class="footer__email" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+    </p>
+    <nav class="footer__nav--company">
+      <h2 class="footer__nav-title">о компании</h2>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Наши магазины</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Вакансии</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Сертификаты</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__nav--clients">
+      <h2 class="footer__nav-title">покупателям</h2>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Каталог товаров</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Как заказать?</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">FAQ</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Корпоративным клиентам</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__nav--service">
+      <h2 class="footer__nav-title">оплата и доставка</h2>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Способы оплаты</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Время доставки</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Гарантии и ремонт</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">Возврат и компенсация</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
