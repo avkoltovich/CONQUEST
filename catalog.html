@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CONQUEST - Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7cPrata%7cRoboto:300,400,500,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="catalog-header">
+    <a class="catalog-header__link--logo" href="index.html"><img class="catalog-header__logo" src="img/logo.png"
+        alt="CONQUEST" width="104" height="26"></a>
+    <nav class="catalog-header__nav">
+      <ul class="catalog-header__list">
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Каталог</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Акции</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Доставка</a>
+        </li>
+        <li class="catalog-header__item">
+          <a class="catalog-header__link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="catalog-header__list--user">
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/search.svg" width="16" height="16" alt="Поиск">
+          </a>
+        </li>
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/heart.svg" width="21" height="18" alt="Избранное">
+          </a>
+        </li>
+        <li class="catalog-header__ltem--user">
+          <a href="" class="catalog-header__link--user">
+            <img class="catalog-header__img" src="img/cart.svg" width="18" height="16" alt="Корзина">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="catalog">
+    <h1 class="visually-hidden">Каталог товаров</h1>
+    <ul class="catalog__pagination">
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" href="">главная</a>
+      </li>
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" href="">Каталог</a>
+      </li>
+      <li class="catalog__pag-item">
+        <a class="catalog__pag-link" aria-current="page">Мужские часы</a>
+      </li>
+    </ul>
+    <section class="watch">
+      <h2 class="watch__heading">Мужские часы</h2>
+      <section class="watch__filter filter">
+        <h3 class="visually-hidden">Фильтр</h3>
+        <form class="filter__form">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">стоимость</legend>
+            <label class="filter__label">
+              <button class="filter__range--left">
+                <img src="img/range-btn.svg" width="10" height="10" alt="12 000 ₽">
+              </button>
+              12 000 ₽
+            </label>
+            <label class="filter__label">
+              <button class="filter__range--right">
+                <img src="img/range-btn.svg" width="10" height="10" alt="90 000 ₽">
+              </button>
+              90 000 ₽
+            </label>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">бренд</legend>
+            <label class="filter__label">
+              <input type="checkbox">
+              Techne
+            </label>
+            <label class="filter__label">
+              <input type="checkbox">
+              Rado
+            </label>
+            <label class="filter__label">
+              <input type="checkbox">
+              Bvlgari
+            </label>
+            <label class="filter__label">
+              <input type="checkbox">
+              Tissot
+            </label>
+            <label class="filter__label">
+              <input type="checkbox">
+              Omega
+            </label>
+            <label class="filter__label">
+              <input type="checkbox">
+              Montblanc
+            </label>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">механизм</legend>
+            <button class="filter__btn--more">
+              <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
+            </button>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Материал</legend>
+            <button class="filter__btn--more">
+              <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
+            </button>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">цвет</legend>
+            <button class="filter__btn--more">
+              <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
+            </button>
+          </fieldset>
+          <button class="filter__btn--reset" type="reset">сбросить фильтр</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+</body>
+
+</html>
