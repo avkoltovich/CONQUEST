@@ -130,6 +130,7 @@
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
 
   list-style: url('../img/catalog/pag-list-style.svg');
 }
@@ -155,10 +156,6 @@
 .catalog__pag-item [aria-current="page"],
 .catalog__pag-link:hover {
   color: #555248;
-}
-
-.watch {
-  padding-top: 10px;
 }
 
 .watch__heading {
@@ -190,7 +187,7 @@
 .filter__fieldset--checkbox {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .filter__legend {
@@ -232,6 +229,7 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .filter__range-btn--left {
@@ -289,6 +287,58 @@
   cursor: pointer;
 }
 
+.filter__label--checkbox {
+  position: relative;
+
+  padding-left: 29px;
+}
+
+.filter__label:last-of-type {
+  margin-bottom: 30px;
+}
+
+.filter__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.filter__checkbox::-ms-check {
+  display: none;
+}
+
+.filter__checkbox-img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("../img/catalog/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+}
+
+.filter__checkbox:checked+.filter__checkbox-img {
+  background-image: url("../img/catalog/checkbox-on.svg");
+}
+
+.filter__checkbox:hover+.filter__checkbox-img {
+  opacity: 0.6;
+}
+
+.filter__checkbox:focus+.filter__checkbox-img {
+  opacity: 1;
+  outline: 1px dotted #6f6e6d;
+}
+
+.filter__checkbox:disabled+.filter__checkbox-img {
+  opacity: 0.25;
+}
+
 .filter__btn--more {
   padding: 0;
   margin-left: auto;
@@ -299,7 +349,25 @@
 }
 
 .filter__btn--reset {
-  
+  width: 234px;
+  height: 64px;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #1d1a1a;
+
+  background-color: transparent;
+  border: 2px solid #e7e0cf;
+  cursor: pointer;
+}
+
+.watch__sorting {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .promo {
