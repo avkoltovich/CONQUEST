@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <header class="catalog-header">
+  <header class="catalog-header container">
     <a class="catalog-header__link--logo" href="index.html"><img class="catalog-header__logo" src="img/logo.png"
         alt="CONQUEST" width="104" height="26"></a>
     <nav class="catalog-header__nav">
       <ul class="catalog-header__list">
         <li class="catalog-header__item">
-          <a class="catalog-header__link" href="">Каталог</a>
+          <a class="catalog-header__link" href="" aria-current="page">Каталог</a>
         </li>
         <li class="catalog-header__item">
           <a class="catalog-header__link" href="">Акции</a>
@@ -30,70 +30,68 @@
           <a class="catalog-header__link" href="">Контакты</a>
         </li>
       </ul>
-      <ul class="catalog-header__list--user">
-        <li class="catalog-header__ltem--user">
-          <a href="" class="catalog-header__link--user">
-            <img class="catalog-header__img" src="img/search.svg" width="16" height="16" alt="Поиск">
-          </a>
-        </li>
-        <li class="catalog-header__ltem--user">
-          <a href="" class="catalog-header__link--user">
-            <img class="catalog-header__img" src="img/heart.svg" width="21" height="18" alt="Избранное">
-          </a>
-        </li>
-        <li class="catalog-header__ltem--user">
-          <a href="" class="catalog-header__link--user">
-            <img class="catalog-header__img" src="img/cart.svg" width="18" height="16" alt="Корзина">
-          </a>
-        </li>
-      </ul>
     </nav>
+    <ul class="main-header__list--user">
+      <li class="main-header__ltem--user">
+        <button class="main-header__btn" type="button">
+          <img class="main-header__img" src="img/search.svg" width="16" height="16" alt="Поиск">
+        </button>
+      </li>
+      <li class="main-header__ltem--user">
+        <button class="main-header__btn main-header__btn--fav" type="button">
+          <img class="main-header__img" src="img/heart.svg" width="21" height="18" alt="Избранное">
+        </button>
+      </li>
+      <li class="main-header__ltem--user">
+        <button class="main-header__btn" type="button">
+          <img class="main-header__img" src="img/cart.svg" width="18" height="16" alt="Корзина">
+        </button>
+      </li>
+    </ul>
   </header>
   <main class="catalog">
     <h1 class="visually-hidden">Каталог товаров</h1>
-    <ul class="catalog__pagination">
-      <li class="catalog__pag-item">
-        <a class="catalog__pag-link" href="">Главная</a>
-      </li>
-      <li class="catalog__pag-item">
-        <a class="catalog__pag-link" href="">Каталог</a>
-      </li>
-      <li class="catalog__pag-item">
-        <a class="catalog__pag-link" aria-current="page">Мужские часы</a>
-      </li>
-    </ul>
-    <section class="watch">
+    <div class="container">
+      <ul class="catalog__pagination">
+        <li class="catalog__pag-item">
+          <a class="catalog__pag-link" href="index.html">Главная</a>
+        </li>
+        <li class="catalog__pag-item">
+          <a class="catalog__pag-link" href="">Каталог</a>
+        </li>
+        <li class="catalog__pag-item">
+          <a class="catalog__pag-link" aria-current="page">Мужские часы</a>
+        </li>
+      </ul>
+    </div>
+    <section class="watch container">
       <h2 class="watch__heading">Мужские часы</h2>
       <section class="watch__filter filter">
         <h3 class="visually-hidden">Фильтр</h3>
         <form class="filter__form">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">стоимость</legend>
-            <label class="filter__label">
-              <button class="filter__range--left">
-                <img src="img/range-btn.svg" width="10" height="10" alt="12 000 ₽">
-              </button>
-              12 000 ₽
-            </label>
-            <label class="filter__label">
-              <button class="filter__range--right">
-                <img src="img/range-btn.svg" width="10" height="10" alt="90 000 ₽">
-              </button>
-              90 000 ₽
-            </label>
+          <fieldset class="filter__fieldset filter__fieldset--range">
+            <legend class="filter__legend">Стоимость</legend>
+            <button class="filter__range-btn filter__range-btn--left">
+              <img src="img/range-btn.svg" width="12" height="12" alt="12 000 ₽">
+              <span class="filter__range-price">12 000 <img class="ruble" src="img/ruble.svg" alt="₽"></span>
+            </button>
+            <button class="filter__range-btn filter__range-btn--right">
+              <img src="img/range-btn.svg" width="12" height="12" alt="90 000 ₽">
+              <span class="filter__range-price">90 000 <img class="ruble" src="img/ruble.svg" alt="₽"></span>
+            </button>
           </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">бренд</legend>
+          <fieldset class="filter__fieldset filter__fieldset--checkbox">
+            <legend class="filter__legend">Бренд</legend>
             <label class="filter__label">
-              <input type="checkbox">
+              <input type="checkbox" checked>
               Techne
             </label>
             <label class="filter__label">
-              <input type="checkbox">
+              <input type="checkbox" checked>
               Rado
             </label>
             <label class="filter__label">
-              <input type="checkbox">
+              <input type="checkbox" checked>
               Bvlgari
             </label>
             <label class="filter__label">
@@ -109,24 +107,24 @@
               Montblanc
             </label>
           </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">механизм</legend>
+          <label class="filter__label">
+            Механизм
             <button class="filter__btn--more">
               <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
             </button>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Материал</legend>
+          </label>
+          <label class="filter__label">
+            Материал
             <button class="filter__btn--more">
               <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
             </button>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">цвет</legend>
+          </label>
+          <label class="filter__label">
+            Цвет
             <button class="filter__btn--more">
               <img src="img/plus.svg" width="10" height="10" alt="Раскрыть">
             </button>
-          </fieldset>
+          </label>
           <button class="filter__btn--reset" type="reset">сбросить фильтр</button>
         </form>
       </section>
