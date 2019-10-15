@@ -420,7 +420,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 930px;
-  padding-left: 90px;
+  padding-left: 98px;
   margin: 0;
 
   list-style: none;
@@ -431,9 +431,24 @@
 
   width: 250px;
   height: 300px;
+  padding: 20px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 
   background-color: #fdfdfb;
-  outline: 1px solid tomato;
+}
+
+.watch__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.watch__item-banner {
+  padding-left: 35px;
+
+  background-color: #D4B098;
+  background-image: url('../img/catalog/banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .watch__img {
@@ -445,6 +460,8 @@
 }
 
 .watch__title {
+  margin: 0;
+
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -452,6 +469,25 @@
   line-height: 21.33px;
   text-transform: uppercase;
   color: #444240;
+}
+
+.watch__title--banner {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1.35px;
+  color: #fff;
+}
+
+.watch__text--banner {
+  max-width: 106px;
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
 }
 
 .watch__price {
@@ -463,6 +499,53 @@
 
 .watch__price .ruble {
   height: 9px;
+}
+
+.watch__btn-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.watch__btn--cart,
+.watch__btn--fav {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.watch__pagination {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+
+  list-style: none;
+}
+
+.watch__pag-item {
+  margin-right: 10px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.33px;
+  color: #b6b6b6;
+}
+
+.watch__pag-item [aria-current="page"] {
+  color: #1b1a17;
+}
+
+.watch__pag-item:last-child {
+  margin-right: 0;
+}
+
+.watch__pag-link {
+  text-decoration: none;
+  color: #b6b6b6;
+}
+
+.watch__pag-icon--right {
+  transform: rotate(180deg);
 }
 
 .promo {
