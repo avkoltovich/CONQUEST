@@ -1149,6 +1149,7 @@
 
 .card-wrapper {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .card-photo__full-img {
@@ -1328,6 +1329,24 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.viewed__heading {
+  margin-top: 0;
+  margin-bottom: 45px;
+
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1b1a17;
+}
+
+.viewed__img {
+  position: absolute;
+  top: 45px;
+  left: 80px;
+
+  height: 80%;
 }
 
 .footer__wrapper {
